@@ -1,0 +1,7 @@
+#!/Users/john/Visualize_Aperture/TESS/MAST_2025-11-16T0321/TESS/tess2019199201929-s0014-s0026-0000000020212631/.venv/bin/python
+import sys
+from astropy.io.votable.volint import main
+if __name__ == '__main__':
+    if sys.argv[0].endswith('.exe'):
+        sys.argv[0] = sys.argv[0][:-4]
+    sys.exit(main())
